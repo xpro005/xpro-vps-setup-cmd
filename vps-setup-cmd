@@ -141,4 +141,4 @@ echo -e "${R}❌ Invalid option${N}"
 sleep 2
 ;;
 esac
-done0
+done
