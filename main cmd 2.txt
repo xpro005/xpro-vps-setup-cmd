@@ -80,7 +80,7 @@ check_image_lock() {
         
         # Check if lock file is stale (older than 5 minutes)
         if [[ $(find "$lock_file" -mmin +5 2>/dev/null) ]]; then
-            print_status "WARN" "⏰ Lock file appears stale (older than 5 minutes)"
+            print_status "WARN" " Lock file appears stale (older than 5 minutes)"
             read -p "$(print_status "INPUT" "🗑️ Remove stale lock file? (y/N): ")" remove_lock
             if [[ "$remove_lock" =~ ^[Yy]$ ]]; then
                 rm -f "$lock_file"
