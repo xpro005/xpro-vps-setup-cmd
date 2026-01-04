@@ -122,7 +122,7 @@ clear
 print_xpro_logo
 print_status "⚡ IDX VPS MAKER"
 
-bash <(curl -s https://raw.githubusercontent.com/xpro005/xpro-vps-setup-cmd/refs/heads/main/vm_manager.sh)
+bash <(curl -s https://raw.githubusercontent.com/xpro005/xpro-vps-setup-cmd/refs/heads/main/Main)
 
 read -p "Press Enter to return..."
 ;;
