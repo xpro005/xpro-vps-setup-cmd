@@ -43,8 +43,8 @@ check_image_lock() {
     
     # Check if QEMU is already using this image
     if lsof "$img_file" 2>/dev/null | grep -q qemu-system; then
-        [span_6](start_span)print_status "WARN" "🔒 Image file $img_file is already in use by another QEMU process"[span_6](end_span)
-        
+        print_status "WARN" "🔒”’ Image file $img_file is already in use by another QEMU process
+                
         # Find the process ID
         [span_7](start_span)local pid=$(lsof "$img_file" 2>/dev/null | grep qemu-system | awk '{print $2}' | head -1)[span_7](end_span)
         if [[ -n "$pid" ]]; then
@@ -52,7 +52,7 @@ check_image_lock() {
             
             # Check if it's our own VM
             if ps -p "$pid" -o cmd= | grep -q "$vm_name"; then
-                [span_9](start_span)print_status "INFO" "🤔 This appears to be the same VM already running"[span_9](end_span)
+                [span_9](start_span)print_status "INFO" "🔎 This appears to be the same VM already running"[span_9](end_span)
                 [span_10](start_span)read -p "$(print_status "INPUT" "🔄 Kill existing process and restart? (y/N): ")" kill_choice[span_10](end_span)
                 if [[ "$kill_choice" =~ ^[Yy]$ ]]; then
                     kill "$pid"
