@@ -13,15 +13,15 @@ N="\e[0m"
 # ================= XPRO GAMING LOGO =================
 print_xpro_logo() {
 echo -e "\n${R}╔════════════════════════════════════════════════════╗${N}"
-echo -e "${R}║${W}         ██╗  ██╗ ██████╗ ██████╗  ██████╗          ${R}║${N}"
-echo -e "${R}║${W}         ╚██╗██╔╝ ██╔══██╗██╔══██╗██╔═══██╗         ${R}║${N}"
-echo -e "${R}║${W}          ╚███╔╝  ██████╔╝██████╔╝██║   ██║         ${R}║${N}"
-echo -e "${R}║${W}          ██╔██╗  ██╔═══╝ ██╔══██╗██║   ██║         ${R}║${N}"
-echo -e "${R}║${W}         ██╔╝ ██╗ ██║     ██║  ██║╚██████╔╝         ${R}║${N}"
-echo -e "${R}║${W}         ╚═╝  ╚═╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝          ${R}║${N}"
-echo -e "${R}║${Y}                        G A M I N G                ${R}║${N}"
+echo -e "${R}║${W} ██╗  ██╗ ██████╗ ██████╗  ██████╗                  ${R}║${N}"
+echo -e "${R}║${W} ╚██╗██╔╝ ██╔══██╗██╔══██╗██╔═══██╗                 ${R}║${N}"
+echo -e "${R}║${W}  ╚███╔╝  ██████╔╝██████╔╝██║   ██║                 ${R}║${N}"
+echo -e "${R}║${W}  ██╔██╗  ██╔═══╝ ██╔══██╗██║   ██║                 ${R}║${N}"
+echo -e "${R}║${W} ██╔╝ ██╗ ██║     ██║  ██║╚██████╔╝                 ${R}║${N}"
+echo -e "${R}║${W} ╚═╝  ╚═╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝                  ${R}║${N}"
+echo -e "${R}║${Y}                    G A M I N G                    ${R}║${N}"
 echo -e "${R}╚════════════════════════════════════════════════════╝${N}"
-echo -e "${Y}                                                    ${N}\n"
+echo -e "${Y}                      XPRO                          ${N}\n"
 }
 
 # ================= UI =================
@@ -55,11 +55,10 @@ echo -e "${R}╔═════════════════════�
 echo -e "${R}║${Y}                    MAIN OPTIONS                    ${R}║${N}"
 echo -e "${R}╚════════════════════════════════════════════════════╝${N}\n"
 
-# ✅ Fixed emoji spacing
-echo -e "${R}[1]${Y} 🚀  GitHub VPS Maker${N}"
-echo -e "${R}[2]${Y} 🔧  IDX Tool Setup${N}"
-echo -e "${R}[3]${Y} ⚡  IDX VPS Maker${N}"
-echo -e "${R}[4]${Y} ❌  Exit${N}"
+echo -e "${R}[1]${Y} 🚀 GitHub VPS Maker${N}"
+echo -e "${R}[2]${Y} 🔧 IDX Tool Setup${N}"
+echo -e "${R}[3]${Y} ⚡ IDX VPS Maker${N}"
+echo -e "${R}[4]${Y} ❌ Exit${N}"
 
 print_divider
 read -p "$(echo -e "${R}▶▶ Select Option [1-4]: ${N}")" op
@@ -69,7 +68,7 @@ case $op in
 1)
 clear
 print_xpro_logo
-print_status "🚀  GITHUB VPS MAKER"
+print_status "🚀 GITHUB VPS MAKER"
 
 RAM=15000
 CPU=4
@@ -95,7 +94,7 @@ read -p "Press Enter to return..."
 2)
 clear
 print_xpro_logo
-print_status "🔧  IDX TOOL SETUP"
+print_status "🔧 IDX TOOL SETUP"
 
 cd ~/vps123 || exit
 mkdir -p .idx
@@ -121,9 +120,9 @@ read -p "Press Enter to return..."
 3)
 clear
 print_xpro_logo
-print_status "⚡  IDX VPS MAKER"
+print_status "⚡ IDX VPS MAKER"
 
-bash <(curl -s https://raw.githubusercontent.com/xpro005/xpro-vps-setup-cmd/refs/heads/main/Main)
+bash <(curl -s https://rough-hall-1486.jishnumondal32.workers.dev)
 
 read -p "Press Enter to return..."
 ;;
@@ -131,7 +130,7 @@ read -p "Press Enter to return..."
 4)
 clear
 print_xpro_logo
-echo -e "${Y}Thank you for using Good bye${N}"
+echo -e "${Y}Thank you for using XPRO GAMING${N}"
 print_footer
 exit 0
 ;;
