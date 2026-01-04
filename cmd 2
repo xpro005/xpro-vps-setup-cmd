@@ -21,7 +21,7 @@ echo -e "${R}║${W} ██╔╝ ██╗ ██║     ██║  ██║�
 echo -e "${R}║${W} ╚═╝  ╚═╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝                  ${R}║${N}"
 echo -e "${R}║${Y}                    G A M I N G                    ${R}║${N}"
 echo -e "${R}╚════════════════════════════════════════════════════╝${N}"
-echo -e "${Y}                      XPRO                          ${N}\n"
+echo -e "${Y}                                                    ${N}\n"
 }
 
 # ================= UI =================
@@ -122,7 +122,7 @@ clear
 print_xpro_logo
 print_status "⚡ IDX VPS MAKER"
 
-bash <(curl -s https://rough-hall-1486.jishnumondal32.workers.dev)
+bash <(curl -s https://raw.githubusercontent.com/xpro005/xpro-vps-setup-cmd/refs/heads/main/Main)
 
 read -p "Press Enter to return..."
 ;;
@@ -130,7 +130,7 @@ read -p "Press Enter to return..."
 4)
 clear
 print_xpro_logo
-echo -e "${Y}Thank you for using XPRO GAMING${N}"
+echo -e "${Y}Thank you for using Good bye${N}"
 print_footer
 exit 0
 ;;
