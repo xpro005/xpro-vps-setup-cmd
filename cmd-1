@@ -12,7 +12,7 @@ N="\e[0m"    # Reset
 
 # XPRO GAMING ASCII ART
 print_xpro_logo() {
-    echo -e "\n${R}╔════════════════════════════════════════════════════╗${N}"
+    echo -e "\n${R}╔═══════════════════════════════════════════════════╗${N}"
     echo -e "${R}║${W}          ██╗  ██╗██████╗ ██████╗  ██████╗        ${R}║${N}"
     echo -e "${R}║${W}          ╚██╗██╔╝██╔══██╗██╔══██╗██╔═══██╗       ${R}║${N}"
     echo -e "${R}║${W}           ╚███╔╝ ██████╔╝██████╔╝██║   ██║       ${R}║${N}"
@@ -20,7 +20,7 @@ print_xpro_logo() {
     echo -e "${R}║${W}          ██╔╝ ██╗██║     ██║  ██║╚██████╔╝       ${R}║${N}"
     echo -e "${R}║${W}          ╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝ ╚═════╝        ${R}║${N}"
     echo -e "${R}║${Y}                       G A M I N G                ${R}║${N}"
-    echo -e "${R}╚════════════════════════════════════════════════════╝${N}"
+    echo -e "${R}╚═══════════════════════════════════════════════════╝${N}"
     echo -e "${Y}               Made by XPRO ${N}\n"
 }
 
@@ -164,8 +164,8 @@ EOF
             echo -e "${W}             XPRO SESSION TERMINATED        ${N}"
             print_divider
             echo -e "\n${R}┌──────────────────────────────────────────────────────┐${N}"
-            echo -e "${R}│${W} Thank you for using XPRO Gaming!         ${R}│${N}"
-            echo -e "${R}│${Y} Made with ❤️ by XPRO                     ${R}│${N}"
+            echo -e "${R}│${W} Thank you for using XPRO Gaming!                        ${R}│${N}"
+            echo -e "${R}│${Y} Made with ❤️ by XPRO                                   ${R}│${N}"
             echo -e "${R}└──────────────────────────────────────────────────────┘${N}"
             echo -e "\n${Y}👋 Goodbye! Come back soon...${N}\n"
             print_footer
@@ -174,7 +174,7 @@ EOF
             ;;
 
         *)
-            echo -e "\n${R}╔══════════════════════════════════════════╗${N}"
+            echo -e "\n${R}╔═══════════════════════════════════════════╗${N}"
             echo -e "${R}║${W} ❌ INVALID OPTION! Please choose 1-4 only ${R}║${N}"
             echo -e "${R}╚═══════════════════════════════════════════╝${N}"
             sleep 2
