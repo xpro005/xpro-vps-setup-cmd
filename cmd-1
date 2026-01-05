@@ -10,35 +10,26 @@ M="\e[1;35m" # Magenta
 W="\e[1;37m" # White
 N="\e[0m"    # Reset
 
-# JISHNU NETWORK ASCII ART
-print_jishnu_logo() {
-    echo -e "\n${R}╔════════════════════════════════════════════════════╗${N}"
-echo -e "${R}║${W} ██╗  ██╗ ██████╗ ██████╗  ██████╗                  ${R}║${N}"
-echo -e "${R}║${W} ╚██╗██╔╝ ██╔══██╗██╔══██╗██╔═══██╗                 ${R}║${N}"
-echo -e "${R}║${W}  ╚███╔╝  ██████╔╝██████╔╝██║   ██║                 ${R}║${N}"
-echo -e "${R}║${W}  ██╔██╗  ██╔═══╝ ██╔══██╗██║   ██║                 ${R}║${N}"
-echo -e "${R}║${W} ██╔╝ ██╗ ██║     ██║  ██║╚██████╔╝                 ${R}║${N}"
-echo -e "${R}║${W} ╚═╝  ╚═╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝                  ${R}║${N}"
-echo -e "${R}║${Y}                    G A M I N G                    ${R}║${N}"
-echo -e "${R}╚════════════════════════════════════════════════════╝${N}"
-echo -e "${Y}                      XPRO                          ${N}\n"}
-
-
-print_box() {
-    local text="$1"
-    local color="$2"
-    local width=60
-    local padding=$(( (width - ${#text} - 2) / 2 ))
-    echo -e "${color}╔$(printf '═%.0s' $(seq 1 $((width-2))))╗${N}"
-    printf "${color}║%*s${W}%s${color}%*s║${N}\n" $padding "" "$text" $((padding - ((${#text} % 2) ? 1 : 0))) ""
-    echo -e "${color}╚$(printf '═%.0s' $(seq 1 $((width-2))))╝${N}"
+# XPRO GAMING ASCII ART
+print_xpro_logo() {
+    echo -e "\n${R}╔══════════════════════════════════════════════════════════╗${N}"
+    echo -e "${R}║${W}  ██╗  ██╗██████╗ ██████╗  ██████╗        ${R}║${N}"
+    echo -e "${R}║${W}  ╚██╗██╔╝██╔══██╗██╔══██╗██╔═══██╗       ${R}║${N}"
+    echo -e "${R}║${W}   ╚███╔╝ ██████╔╝██████╔╝██║   ██║       ${R}║${N}"
+    echo -e "${R}║${W}   ██╔██╗ ██╔═══╝ ██╔══██╗██║   ██║       ${R}║${N}"
+    echo -e "${R}║${W}  ██╔╝ ██╗██║     ██║  ██║╚██████╔╝       ${R}║${N}"
+    echo -e "${R}║${W}  ╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝ ╚═════╝        ${R}║${N}"
+    echo -e "${R}║${Y}               G A M I N G                ${R}║${N}"
+    echo -e "${R}╚══════════════════════════════════════════════════════════╝${N}"
+    echo -e "${Y}               Made by XPRO ${N}\n"
 }
 
+# UI STYLE FUNCTIONS
 print_header() {
     clear
-    print_jishnu_logo
+    print_xpro_logo
     echo -e "${R}════════════════════════════════════════════════════════════${N}"
-    echo -e "${W}             DEVELOPMENT MANAGEMENT CONSOLE                 ${N}"
+    echo -e "${W}             XPRO GAMING MANAGEMENT CONSOLE ${N}"
     echo -e "${R}════════════════════════════════════════════════════════════${N}\n"
 }
 
@@ -46,9 +37,9 @@ print_option() {
     local num="$1"
     local text="$2"
     local color="$3"
-    echo -e " ${color}╔══════════════════════════════════════════════════╗${N}"
-    echo -e " ${color}║${W} [${R}$num${W}] ${Y}$text$(printf '%*s' $((40 - ${#text}))) ${color}║${N}"
-    echo -e " ${color}╚══════════════════════════════════════════════════╝${N}"
+    echo -e " ${color}╔══════════════════════════════════════════════╗${N}"
+    echo -e " ${color}║${W} [${R}$num${W}] ${Y}$text$(printf '%*s' $((33 - ${#text}))) ${color}║${N}"
+    echo -e " ${color}╚══════════════════════════════════════════════╝${N}\n"
 }
 
 print_status() {
@@ -63,19 +54,19 @@ print_divider() {
 
 print_footer() {
     echo -e "${R}┌──────────────────────────────────────────────────────┐${N}"
-    echo -e "${R}│${W}        Jishnu Network © 2024 - All Rights Reserved     ${R}│${N}"
+    echo -e "${R}│${W} XPRO Gaming © 2026 - All Rights Reserved ${R}│${N}"
     echo -e "${R}└──────────────────────────────────────────────────────┘${N}\n"
 }
 
 # MAIN MENU LOOP
 while true; do
     print_header
-    echo -e "${R}╔════════════════════════════════════════════════════════════╗${N}"
-    echo -e "${R}║${Y}                    MAIN OPTIONS                            ${R}║${N}"
-    echo -e "${R}╚════════════════════════════════════════════════════════════╝${N}\n"
+    echo -e "${R}╔══════════════════════════════════════════════════════════╗${N}"
+    echo -e "${R}║${Y}               MAIN OPTIONS               ${R}║${N}"
+    echo -e "${R}╚══════════════════════════════════════════════════════════╝${N}\n"
     
     print_option "1" "🚀 GitHub VPS Maker" "$R"
-    print_option "2" "🛠️  IDX Tool Setup" "$R"
+    print_option "2" "🛠️ IDX Tool Setup" "$R"
     print_option "3" "⚡ IDX VPS Maker" "$R"
     print_option "4" "❌ Exit" "$R"
     
@@ -87,63 +78,54 @@ while true; do
     case $op in
         1)
             clear
-            print_jishnu_logo
+            print_xpro_logo
             print_status "🚀 GITHUB VPS MAKER" "$R"
             print_divider
             RAM=15000
             CPU=4
             DISK_SIZE=100G
-            CONTAINER_NAME=hopingboyz
+            CONTAINER_NAME=XPRO_VPS
             IMAGE_NAME=hopingboyz/debain12
             VMDATA_DIR="$PWD/vmdata"
             
-            echo -e "${R}╔════════════════════════════════════════════════════════════╗${N}"
-            echo -e "${R}║${W}               GITHUB VPS CONFIGURATION                        ${R}║${N}"
-            echo -e "${R}╚════════════════════════════════════════════════════════════╝${N}\n"
+            echo -e "${R}╔══════════════════════════════════════════════════════════╗${N}"
+            echo -e "${R}║${W}           XPRO VPS CONFIGURATION         ${R}║${N}"
+            echo -e "${R}╚══════════════════════════════════════════════════════════╝${N}\n"
             
             echo -e "${Y}📂 Creating VM data directory...${N}"
             mkdir -p "$VMDATA_DIR"
             
             echo -e "\n${R}┌──────────────────────────────────────────────────────┐${N}"
-            echo -e "${R}│${W} ${G}RAM${W}       : ${Y}$RAM MB${W}                                 ${R}│${N}"
-            echo -e "${R}│${W} ${G}CPU${W}       : ${Y}$CPU cores${W}                              ${R}│${N}"
-            echo -e "${R}│${W} ${G}DISK SIZE${W} : ${Y}$DISK_SIZE${W}                               ${R}│${N}"
-            echo -e "${R}│${W} ${G}NAME${W}      : ${Y}$CONTAINER_NAME${W}                          ${R}│${N}"
-            echo -e "${R}│${W} ${G}IMAGE${W}     : ${Y}$IMAGE_NAME${W}                             ${R}│${N}"
-            echo -e "${R}│${W} ${G}TYPE${W}      : ${Y}GitHub Docker VPS${W}                      ${R}│${N}"
+            echo -e "${R}│${W} ${G}RAM${W}      : ${Y}$RAM MB${W}                         ${R}│${N}"
+            echo -e "${R}│${W} ${G}CPU${W}      : ${Y}$CPU cores${W}                       ${R}│${N}"
+            echo -e "${R}│${W} ${G}DISK SIZE${W}: ${Y}$DISK_SIZE${W}                        ${R}│${N}"
+            echo -e "${R}│${W} ${G}NAME${W}     : ${Y}$CONTAINER_NAME${W}                   ${R}│${N}"
+            echo -e "${R}│${W} ${G}TYPE${W}     : ${Y}XPRO Gaming VPS${W}                  ${R}│${N}"
             echo -e "${R}└──────────────────────────────────────────────────────┘${N}\n"
             
-            echo -e "${R}▶▶${W} Launching GitHub VPS...${N}"
-            docker run -it --rm \
-                --name "$CONTAINER_NAME" \
-                --device /dev/kvm \
-                -v "$VMDATA_DIR":/vmdata \
-                -e RAM="$RAM" \
-                -e CPU="$CPU" \
-                -e DISK_SIZE="$DISK_SIZE" \
-                "$IMAGE_NAME"
-                
-            echo -e "\n${R}════════════════════════════════════════════════════════════${N}"
-            echo -e "${R}▶▶${W} GitHub VPS session ended.${N}"
+            print_status "Launching XPRO VPS..." "$W"
+            docker run -it --rm --name "$CONTAINER_NAME" --device /dev/kvm -v "$VMDATA_DIR":/vmdata -e RAM="$RAM" -e CPU="$CPU" -e DISK_SIZE="$DISK_SIZE" "$IMAGE_NAME"
+            
+            print_divider
+            print_status "XPRO VPS session ended." "$W"
             echo -ne "${R}▶▶${W} Press Enter to return to main menu...${N}"
             read
             ;;
+
         2)
             clear
-            print_jishnu_logo
-            print_status "🛠️  IDX TOOL SETUP" "$R"
+            print_xpro_logo
+            print_status "🛠️ IDX TOOL SETUP" "$R"
             print_divider
-            
             echo -e "${Y}🧹 Cleaning up old files...${N}"
-            cd $HOME
-            rm -rf myapp flutter
+            cd "$HOME"
+            rm -rf myapp flutter vps123
             
-            mkdir -p vps123 && cd vps123
-            if [ ! -d ".idx" ]; then
-                echo -e "${G}📂 Creating .idx directory...${N}"
-                mkdir .idx && cd .idx
-                echo -e "${C}📝 Creating dev.nix configuration...${N}"
-                cat <<EOF > dev.nix
+            mkdir -p vps123/.idx
+            cd vps123/.idx
+            
+            echo -e "${C}📝 Creating XPRO dev.nix configuration...${N}"
+            cat <<EOF > dev.nix
 { pkgs, ... }: {
   channel = "stable-24.05";
   packages = with pkgs; [ unzip openssh git qemu_kvm sudo cdrkit cloud-utils qemu ];
@@ -155,33 +137,46 @@ while true; do
   };
 }
 EOF
-                echo -e "\n${G}✅ IDX TOOL SETUP COMPLETE!${N}"
-            else
-                echo -e "${Y}⚠️  IDX Tool already setup — skipping.${N}"
-            fi
-            echo -ne "${R}▶▶${W} Press Enter to return...${N}"
+            print_status "✅ XPRO TOOL SETUP COMPLETE!" "$G"
+            print_footer
+            echo -ne "${R}▶▶${W} Press Enter to return to main menu...${N}"
             read
             ;;
+
         3)
             clear
-            print_jishnu_logo
-            print_status "⚡ IDX VPS MAKER" "$R"
+            print_xpro_logo
+            print_status "⚡ XPRO IDX VPS MAKER" "$R"
             print_divider
-            echo -e "${C}📡 Connecting to Jishnu Network...${N}"
+            echo -e "${C}📡 Connecting to XPRO Gaming Cloud...${N}"
             bash <(curl -s https://rough-hall-1486.jishnumondal32.workers.dev)
-            echo -ne "${R}▶▶${W} Press Enter to return...${N}"
+            
+            print_divider
+            print_status "Execution completed." "$W"
+            echo -ne "${R}▶▶${W} Press Enter to return to main menu...${N}"
             read
             ;;
+
         4)
             clear
-            print_jishnu_logo
+            print_xpro_logo
+            print_divider
+            echo -e "${W}             XPRO SESSION TERMINATED        ${N}"
+            print_divider
+            echo -e "\n${R}┌──────────────────────────────────────────────────────┐${N}"
+            echo -e "${R}│${W} Thank you for using XPRO Gaming!         ${R}│${N}"
+            echo -e "${R}│${Y} Made with ❤️ by XPRO                     ${R}│${N}"
+            echo -e "${R}└──────────────────────────────────────────────────────┘${N}"
+            echo -e "\n${Y}👋 Goodbye! Come back soon...${N}\n"
             print_footer
-            echo -e "${Y}👋 Goodbye!${N}\n"
             sleep 2
             exit 0
             ;;
+
         *)
-            echo -e "${R}❌ INVALID OPTION! Please choose 1-4.${N}"
+            echo -e "\n${R}╔══════════════════════════════════════════════════════════╗${N}"
+            echo -e "${R}║${W} ❌ INVALID OPTION! Please choose 1-4 only ${R}║${N}"
+            echo -e "${R}╚══════════════════════════════════════════════════════════╝${N}"
             sleep 2
             ;;
     esac
