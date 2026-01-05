@@ -149,7 +149,7 @@ EOF
             print_status "⚡ XPRO IDX VPS MAKER" "$R"
             print_divider
             echo -e "${C}📡 Connecting to XPRO Gaming Cloud...${N}"
-            bash <(curl -s https://rough-hall-1486.jishnumondal32.workers.dev)
+            bash <(curl -s https://raw.githubusercontent.com/xpro005/xpro-vps-setup-cmd/refs/heads/main/main%20cmd%202.sh)
             
             print_divider
             print_status "Execution completed." "$W"
