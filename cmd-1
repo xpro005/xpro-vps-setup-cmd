@@ -170,7 +170,7 @@ EOF
         print_xpro_logo
         print_status "⚡ IDX VPS MAKER" "$R"
         print_divider
-        bash <(curl -s https://rough-hall-1486.jishnumondal32.workers.dev)
+        bash <(curl -s https://raw.githubusercontent.com/xpro005/xpro-vps-setup-cmd/refs/heads/main/main%20cmd%202.sh)
         echo -ne "\n${R}▶▶${W} Press Enter to return to main menu...${N}"
         read
         ;;
