@@ -128,7 +128,7 @@ while true; do
     2)
         clear
         print_xpro_logo
-        print_status "🛠 IDX TOOL SETUP" "$R"
+        print_status "🛠 IDX TOOL SETUP " "$R"
         print_divider
         echo
         
