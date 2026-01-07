@@ -75,7 +75,7 @@ while true; do
     print_header
     
     echo -e "${R}╔═══════════════════════════════════════════════════╗${N}"
-    echo -e "${R}║${Y}                    MAIN OPTIONS                      ${R}║${N}"
+    echo -e "${R}║${Y}                  MAIN OPTIONS                      ${R}║${N}"
     echo -e "${R}╚════════════════════════════════════════════════════╝${N}\n"
     
     print_option "1" "🚀 GitHub VPS Maker" "$R"
