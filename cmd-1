@@ -102,7 +102,7 @@ while true; do
         VMDATA_DIR="$PWD/vmdata"
         
         echo -e "${R}╔════════════════════════════════════════════════════╗${N}"
-        echo -e "${R}║${W}               GITHUB VPS CONFIGURATION              ${R}║${N}"
+        echo -e "${R}║${W}               GITHUB VPS CONFIGURATION             ${R}║${N}"
         echo -e "${R}╚════════════════════════════════════════════════════╝${N}\n"
         
         echo -e "${Y}📂 Creating VM data directory...${N}"
