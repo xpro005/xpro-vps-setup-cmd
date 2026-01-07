@@ -50,10 +50,9 @@ print_option() {
     local color="$3"
     
     echo -e "  ${color}╔═══════════════════════════════════════════════╗${N}"
-    echo -e "  ${color}║ ${W}  [${R}$num${W}]  ${Y}$text$(printf '%*s' $((33 - ${#text} - 6))) ${color}              ║${N}"
+    echo -e "  ${color}║ ${W}  [${R}$num${W}]  ${Y}$text$(printf '%*s' $((33 - ${#text} - 6))) ${color}          ║${N}"
     echo -e "  ${color}╚═══════════════════════════════════════════════╝${N}\n"
 }
-
 print_status() {
     local text="$1"
     local color="$2"
