@@ -65,7 +65,7 @@ print_divider() {
 
 print_footer() {
     echo -e "${R}┌────────────────────────────────────────────────────┐${N}"
-    echo -e "${R}│${W}      Jishnu Network © 2024 - All Rights Reserved    ${R}│${N}"
+    echo -e "${R}│${W}      XPRO GAMING © 2026 - All Rights Reserved       ${R}│${N}"
     echo -e "${R}└────────────────────────────────────────────────────┘${N}\n"
 }
 
