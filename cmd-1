@@ -19,9 +19,9 @@ print_xpro_logo() {
     echo -e "${R}║${W}           ██╔██╗ ██╔═══╝ ██╔══██╗██║   ██║       ${R}║${N}"
     echo -e "${R}║${W}          ██╔╝ ██╗██║     ██║  ██║╚██████╔╝       ${R}║${N}"
     echo -e "${R}║${W}          ╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝ ╚═════╝        ${R}║${N}"
-    echo -e "${R}║${Y}                       G A M I N G                ${R}║${N}"
+    echo -e "${R}║${Y}                     G A M I N G                  ${R}║${N}"
     echo -e "${R}╚══════════════════════════════════════════════════╝${N}"
-    echo -e "${Y}               Made by XPRO ${N}\n"
+    echo -e "${Y}                      Made by XPRO ${N}\n"
 }
 
 # NEW UI STYLE FUNCTIONS
@@ -49,9 +49,9 @@ print_option() {
     local text="$2"
     local color="$3"
     
-    echo -e "  ${color}╔══════════════════════════════════════════╗${N}"
+    echo -e "  ${color}╔══════════════════════════════════════╗${N}"
     echo -e "  ${color}║${W}  [${R}$num${W}]  ${Y}$text$(printf '%*s' $((33 - ${#text} - 6))) ${color}║${N}"
-    echo -e "  ${color}╚══════════════════════════════════════════╝${N}\n"
+    echo -e "  ${color}╚══════════════════════════════════════╝${N}\n"
 }
 
 print_status() {
@@ -66,7 +66,7 @@ print_divider() {
 
 print_footer() {
     echo -e "${R}┌────────────────────────────────────────────────────┐${N}"
-    echo -e "${R}│${W}      Jishnu Network © 2024 - All Rights Reserved     ${R}│${N}"
+    echo -e "${R}│${W}      Jishnu Network © 2024 - All Rights Reserved    ${R}│${N}"
     echo -e "${R}└────────────────────────────────────────────────────┘${N}\n"
 }
 
@@ -74,7 +74,7 @@ print_footer() {
 while true; do
     print_header
     
-    echo -e "${R}╔════════════════════════════════════════════════════╗${N}"
+    echo -e "${R}╔═══════════════════════════════════════════════════╗${N}"
     echo -e "${R}║${Y}                    MAIN OPTIONS                      ${R}║${N}"
     echo -e "${R}╚════════════════════════════════════════════════════╝${N}\n"
     
