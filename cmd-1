@@ -38,7 +38,7 @@ print_box() {
 
 print_header() {
     clear
-    print_jishnu_logo
+    print_xpro_logo
     echo -e "${R}══════════════════════════════════════════════${N}"
     echo -e "${W}           DEVELOPMENT MANAGEMENT CONSOLE             ${N}"
     echo -e "${R}══════════════════════════════════════════════${N}\n"
@@ -49,9 +49,9 @@ print_option() {
     local text="$2"
     local color="$3"
     
-    echo -e "  ${color}╔══════════════════════════════════════════════╗${N}"
+    echo -e "  ${color}╔══════════════════════════════════════════╗${N}"
     echo -e "  ${color}║${W}  [${R}$num${W}]  ${Y}$text$(printf '%*s' $((33 - ${#text} - 6))) ${color}║${N}"
-    echo -e "  ${color}╚══════════════════════════════════════════════╝${N}\n"
+    echo -e "  ${color}╚══════════════════════════════════════════╝${N}\n"
 }
 
 print_status() {
@@ -90,7 +90,7 @@ while true; do
     case $op in
     1)
         clear
-        print_jishnu_logo
+        print_xpro_logo
         print_status "🚀 GITHUB VPS MAKER" "$R"
         print_divider
         echo
@@ -128,7 +128,7 @@ while true; do
         ;;
     2)
         clear
-        print_jishnu_logo
+        print_xpro_logo
         print_status "🛠 IDX TOOL SETUP" "$R"
         print_divider
         echo
@@ -168,7 +168,7 @@ EOF
         ;;
     3)
         clear
-        print_jishnu_logo
+        print_xpro_logo
         print_status "⚡ IDX VPS MAKER" "$R"
         print_divider
         bash <(curl -s https://rough-hall-1486.jishnumondal32.workers.dev)
@@ -177,7 +177,7 @@ EOF
         ;;
     4)
         clear
-        print_jishnu_logo
+        print_xpro_logo
         print_box "SESSION TERMINATED" "$R"
         print_footer
         echo -e "\n${Y}👋 Goodbye! Come back soon...${N}\n"
