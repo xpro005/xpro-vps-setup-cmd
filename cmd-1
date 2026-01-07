@@ -78,7 +78,7 @@ while true; do
     echo -e "${R}╚═══════════════════════════════════════════════════╝${N}\n"
     
     print_option "1" "🚀 GitHub VPS Maker" "$R"
-    print_option "2" "🛠 IDX Tool Setup" "$R"
+    print_option "2" "🛠 IDX Tool Setup " "$R"
     print_option "3" "⚡ IDX VPS Maker" "$R"
     print_option "4" "❌ Exit" "$R"
     
