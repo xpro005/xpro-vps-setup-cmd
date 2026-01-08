@@ -150,6 +150,17 @@ while true; do
   channel = "stable-24.05";
   packages = with pkgs; [ unzip openssh git qemu_kvm sudo cdrkit cloud-utils qemu ];
   env = { EDITOR = "nano"; };
+# Use https://search.nixos.org/packages to find packages
+  packages = [
+    pkgs.unzip
+    pkgs.openssh
+    pkgs.git
+    pkgs.qemu_kvm
+    pkgs.sudo
+    pkgs.cdrkit
+    pkgs.cloud-utils
+    pkgs.qemu
+  ];
   idx = {
     extensions = [ "Dart-Code.flutter" "Dart-Code.dart-code" ];
     workspace = { onCreate = { }; onStart = { }; };
