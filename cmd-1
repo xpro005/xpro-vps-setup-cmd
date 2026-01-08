@@ -150,6 +150,7 @@ while true; do
   channel = "stable-24.05";
   packages = with pkgs; [ unzip openssh git qemu_kvm sudo cdrkit cloud-utils qemu ];
   env = { EDITOR = "nano"; };
+  services.docker.enable = true;
 # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.unzip
